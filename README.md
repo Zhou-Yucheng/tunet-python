@@ -2,6 +2,8 @@
 
 TUNet 2018 认证协议的纯 python 实现，含 auth4 / auth6 / net 认证。适用于服务器在无人交互时自动认证。
 
+Forked from https://github.com/yuantailing/tunet-python，包装了CheckNet用于自动调用
+
 ## API
 API 共 3 * 3 项功能，对于 `https://{auth4,auth6,net}.tsinghua.edu.cn/` 分别有 login、logout、checklogin 三项功能。
 
