@@ -10,5 +10,5 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 # m h  dom mon dow   command
-* * * * * sh /home/zhouyc/Codes/tunet-python/CheckNet.sh
+*/2 * * * * sh /home/zhouyc/Codes/tunet-python/CheckNet.sh
 
