@@ -1,8 +1,8 @@
 --Base 64 encode/decode
 -pwsh
-        [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes("pswd string"))
+        [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes("pswd string")) > pswd.b64
 -bash
-        echo 'pswd string' | base64
+        echo 'pswd string' | base64 > pswd.b64
 
 
 --Linux crontab (crontab -e)
