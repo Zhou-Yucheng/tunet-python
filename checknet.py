@@ -13,8 +13,8 @@ args = parser.parse_args()
 
 if __name__ == "__main__":
     dir=Path(__file__).parent
-    username=Path(dir / 'username.txt').read_text()
-    password=base64.b64decode(Path(dir / 'pswd.b64').read_text())
+    username=Path(dir / 'username.txt').read_text().strip()
+    password=str(base64.b64decode(Path(dir / 'pswd.b64').read_text())).strip()
 
     if args.relogin:
         print('logout and relogin...')
