@@ -1,10 +1,11 @@
 .vscode/
 .idea/
+bak/
 
 username.txt
 pswd.*
 checklogin.txt
-log.txt
+log.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
