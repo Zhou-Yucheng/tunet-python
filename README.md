@@ -4,7 +4,7 @@ TUNet 2018 认证协议的纯 python 实现，含 auth4 / auth6 / net 认证。�
 
 Fork自<https://github.com/yuantailing/tunet-python>，包装了checknet脚本便于自动调用，linux中需安装PowerShell Core。
 
-## checknet
+## Task schedule
 
 在Linux中设置任务计划，自动调用脚本 (crontab)
 ```
@@ -19,4 +19,16 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 # m h  dom mon dow   command  
 */2 * * * * /home/zhouyc/Codes/tunet-python/checknet.ps1
 0 8 * * * /home/zhouyc/Codes/tunet-python/checknet.ps1 -r
+```
+
+## Base64 encode
+
+Powershell
+```
+[Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes('password'))
+```
+
+Linux bash
+```
+echo 'password' | base64
 ```
