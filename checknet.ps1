@@ -13,7 +13,7 @@ $pswd = [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64Stri
 
 if($relogin){
     echo 'logout and relogin'
-    python3 cli.py auth4 logout -u $username
+    python cli.py auth4 logout -u $username
 }
-$pswd | python3 cli.py auth4 login --net -u $username
-python3 cli.py auth4 checklogin -u $username | tee log.txt
+$pswd | python cli.py auth4 login --net -u $username
+python cli.py auth4 checklogin -u $username | tee log.txt
